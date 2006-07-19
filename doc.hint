@@ -1,0 +1,4 @@
+category: Gnome Audio Doc
+external-source: gstreamer010-plugins-good
+sdesc: "Good plugins for the GStreamer media framework (API docs, 0.10 branch)"
+ldesc: "This is gst-plugins, a set of plug-ins for GStreamer."

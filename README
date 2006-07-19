@@ -1,0 +1,246 @@
+gstreamer010-plugins-good
+------------------------------------------
+A collection of plugins for the GStreamer media framework.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  glib2-2.8.6-1
+  gstreamer010-0.10.5-1
+  gstreamer010-plugins-base-0.10.6-1
+  liboil03-0.3.8-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.5-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  pyxml-0.8.4-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://gstreamer.freedesktop.org/
+
+Canonical download:
+  http://gstreamer.freedesktop.org/src/gst-plugins-good/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gstreamer010-plugins-good-0.10.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gstreamer010-plugins-good-0.10.3-X.cygport all
+
+This will create:
+  /usr/src/gstreamer010-plugins-good-0.10.3-X-src.tar.bz2
+  /usr/src/gstreamer010-plugins-good-0.10.3-X.tar.bz2
+  /usr/src/gstreamer010-plugins-good-doc-0.10.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+
+  /usr/lib/gstreamer-0.10/cyggstalaw.dll
+  /usr/lib/gstreamer-0.10/cyggstalpha.dll
+  /usr/lib/gstreamer-0.10/cyggstalphacolor.dll
+  /usr/lib/gstreamer-0.10/cyggstapetag.dll
+  /usr/lib/gstreamer-0.10/cyggstauparse.dll
+  /usr/lib/gstreamer-0.10/cyggstautodetect.dll
+  /usr/lib/gstreamer-0.10/cyggstavi.dll
+  /usr/lib/gstreamer-0.10/cyggstcutter.dll
+  /usr/lib/gstreamer-0.10/cyggstdebug.dll
+  /usr/lib/gstreamer-0.10/cyggstefence.dll
+  /usr/lib/gstreamer-0.10/cyggsteffectv.dll
+  /usr/lib/gstreamer-0.10/cyggstflxdec.dll
+  /usr/lib/gstreamer-0.10/cyggstgoom.dll
+  /usr/lib/gstreamer-0.10/cyggsticydemux.dll
+  /usr/lib/gstreamer-0.10/cyggstid3demux.dll
+  /usr/lib/gstreamer-0.10/cyggstlevel.dll
+  /usr/lib/gstreamer-0.10/cyggstmatroska.dll
+  /usr/lib/gstreamer-0.10/cyggstmulaw.dll
+  /usr/lib/gstreamer-0.10/cyggstmultipart.dll
+  /usr/lib/gstreamer-0.10/cyggstnavigationtest.dll
+  /usr/lib/gstreamer-0.10/cyggstrtp.dll
+  /usr/lib/gstreamer-0.10/cyggstrtsp.dll
+  /usr/lib/gstreamer-0.10/cyggstsmpte.dll
+  /usr/lib/gstreamer-0.10/cyggstudp.dll
+  /usr/lib/gstreamer-0.10/cyggstvideobalance.dll
+  /usr/lib/gstreamer-0.10/cyggstvideobox.dll
+  /usr/lib/gstreamer-0.10/cyggstvideoflip.dll
+  /usr/lib/gstreamer-0.10/cyggstvideomixer.dll
+  /usr/lib/gstreamer-0.10/cyggstwavenc.dll
+  /usr/lib/gstreamer-0.10/cyggstwavparse.dll
+  /usr/lib/gstreamer-0.10/libgstalaw.la
+  /usr/lib/gstreamer-0.10/libgstalpha.la
+  /usr/lib/gstreamer-0.10/libgstalphacolor.la
+  /usr/lib/gstreamer-0.10/libgstapetag.la
+  /usr/lib/gstreamer-0.10/libgstauparse.la
+  /usr/lib/gstreamer-0.10/libgstautodetect.la
+  /usr/lib/gstreamer-0.10/libgstavi.la
+  /usr/lib/gstreamer-0.10/libgstcutter.la
+  /usr/lib/gstreamer-0.10/libgstdebug.la
+  /usr/lib/gstreamer-0.10/libgstefence.la
+  /usr/lib/gstreamer-0.10/libgsteffectv.la
+  /usr/lib/gstreamer-0.10/libgstflxdec.la
+  /usr/lib/gstreamer-0.10/libgstgoom.la
+  /usr/lib/gstreamer-0.10/libgsticydemux.la
+  /usr/lib/gstreamer-0.10/libgstid3demux.la
+  /usr/lib/gstreamer-0.10/libgstlevel.la
+  /usr/lib/gstreamer-0.10/libgstmatroska.la
+  /usr/lib/gstreamer-0.10/libgstmulaw.la
+  /usr/lib/gstreamer-0.10/libgstmultipart.la
+  /usr/lib/gstreamer-0.10/libgstnavigationtest.la
+  /usr/lib/gstreamer-0.10/libgstrtp.la
+  /usr/lib/gstreamer-0.10/libgstrtsp.la
+  /usr/lib/gstreamer-0.10/libgstsmpte.la
+  /usr/lib/gstreamer-0.10/libgstudp.la
+  /usr/lib/gstreamer-0.10/libgstvideobalance.la
+  /usr/lib/gstreamer-0.10/libgstvideobox.la
+  /usr/lib/gstreamer-0.10/libgstvideoflip.la
+  /usr/lib/gstreamer-0.10/libgstvideomixer.la
+  /usr/lib/gstreamer-0.10/libgstwavenc.la
+  /usr/lib/gstreamer-0.10/libgstwavparse.la
+  /usr/share/doc/Cygwin/gstreamer010-plugins-good-0.10.3.README
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/COPYING
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/INSTALL
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/NEWS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.3/README
+  /usr/share/locale/af/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/az/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/cs/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/hu/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/it/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/nb/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/nl/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/or/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sq/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sr/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sv/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/uk/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/vi/LC_MESSAGES/gst-plugins-good-0.10.mo
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch01.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch02.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-0.10.devhelp
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-apedemux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-autoaudiosink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-autovideosink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-avidemux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-avimux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cairotimeoverlay.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cdiocddasrc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-dvdec.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-dvdemux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-flacdec.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-goom.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-halaudiosink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-halaudiosrc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-id3demux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-id3v2mux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-jpegdec.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-jpegenc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-level.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-multipartdemux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-multipartmux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-multiudpsink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-1394.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-aasink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-alaw.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-alpha.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-alphacolor.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-apetag.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-autodetect.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-avi.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cacasink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cairo.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cdio.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cutter.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-debug.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-dv.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-efence.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-effectv.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-esdsink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-flac.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-flxdec.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-gconfelements.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-goom.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-halelements.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-id3demux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-jpeg.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-ladspa.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-level.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-matroska.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-mulaw.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-multipart.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-navigationtest.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-ossaudio.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-png.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-rtp.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-rtsp.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-shout2send.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-smpte.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-speex.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-taglib.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-udp.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-videobalance.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-videobox.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-videoflip.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-videomixer.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-wavenc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-wavparse.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-ximagesrc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smokedec.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smokeenc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-udpsrc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-videobalance.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-videoflip.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-videomixer.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-wavparse.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-ximagesrc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/home.png
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/index.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/index.sgml
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/left.png
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/right.png
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/style.css
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/up.png
+
+------------------
+
+Port Notes:
+
+----- version 0.10.3-1 -----
+Version bump.
+gst-plugins packages are now modular with cygport-0.1.92.
+
+----- version 0.10.2-1 -----
+Version bump.
+New external plugin: cdio.
+
+----- version 0.10.1-1 -----
+Version bump.
+Removed unnecessary import libraries from the plugin directory.
+
+----- version 0.10.0-1 -----
+Initial release of 0.10 stable branch for Cygwin.
+External plugins: aa caca cairo dv esd flac gconf jpeg oss png shout2 speex.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
