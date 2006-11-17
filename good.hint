@@ -1,0 +1,4 @@
+category: Gnome Audio
+requires: cygwin glib2 gstreamer010 gstreamer010-plugins-base liboil03
+sdesc: "Good plugins for the GStreamer media framework (runtime, 0.10 branch)"
+ldesc: "This is gst-plugins, a set of plug-ins for GStreamer."

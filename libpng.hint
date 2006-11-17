@@ -1,0 +1,6 @@
+category: Audio Graphics
+requires: cygwin glib2 gstreamer010 libpng12
+external-source: gstreamer010-plugins-good
+sdesc: "PNG plugin for the GStreamer multimedia framework (0.10 branch)"
+ldesc: "PNG plugin for the GStreamer multimedia framework (0.10 branch)"
+

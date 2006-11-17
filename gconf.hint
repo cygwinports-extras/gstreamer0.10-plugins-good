@@ -1,0 +1,6 @@
+category: Audio Gnome
+requires: cygwin glib2 gstreamer010 GConf2
+external-source: gstreamer010-plugins-good
+sdesc: "GConf plugin for the GStreamer multimedia framework (0.10 branch)"
+ldesc: "GConf plugin for the GStreamer multimedia framework (0.10 branch)"
+
