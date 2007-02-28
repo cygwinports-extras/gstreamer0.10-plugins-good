@@ -2,6 +2,7 @@ usr/lib/gstreamer-0.10/*gstalaw.*
 usr/lib/gstreamer-0.10/*gstalpha.*
 usr/lib/gstreamer-0.10/*gstalphacolor.*
 usr/lib/gstreamer-0.10/*gstapetag.*
+usr/lib/gstreamer-0.10/*gstaudiofx.*
 usr/lib/gstreamer-0.10/*gstauparse.*
 usr/lib/gstreamer-0.10/*gstautodetect.*
 usr/lib/gstreamer-0.10/*gstavi.*
