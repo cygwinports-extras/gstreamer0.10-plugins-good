@@ -4,44 +4,46 @@ A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  glib2-2.12.12-2
-  gstreamer010-0.10.13-1
-  gstreamer010-plugins-base-0.10.13-1
-  liboil03-0.3.11-1
+  glib2-2.12.13-1
+  gstreamer010-0.10.14-1
+  gstreamer010-plugins-base-0.10.14-1
+  liboil03-0.3.11-2
 
 (aalib)
   libaa1-1.4rc5-1
+(annodex)
+  libxml2-2.6.30-1
 (cairo)
   libcairo2-1.4.10-1
 (cdio)
-  libcdio7-0.78.2-1
+  libcdio7-0.78.2-2
 (esd)
   libesound0-0.2.38-1
 (flac)
-  libFLAC8-1.1.4-1
+  libFLAC8-1.2.1-1
 (gconf)
   GConf2-2.18.0.1-1
 (gdk_pixbuf)
-  gdk-pixbuf2-2.10.13-1
+  gdk-pixbuf2-2.10.14-1
 (jpeg)
   libjpeg62-6b-12
 (libcaca)
-  libcaca0-0.99.11-1
+  libcaca0-0.99.12-1
 (libdv)
   libdv4-1.0.0-1
 (libpng)
-  libpng12-1.2.12-1
+  libpng12-1.2.22-1
 (shout2)
-  libshout3-2.1-1
+  libshout3-2.2.2-1
 (speex)
-  libspeex1-1.1.10-1
+  libspeex1-1.2beta2-1
 (taglib)
   taglib-1.4-1
 (wavpack)
-  libwavpack0-4.31-1
+  libwavpack1-4.41.0-1
 (ximagesrc)
-  libX11_6-1.1.1-1
-  libXdamage1-1.0.4-1
+  libX11_6-1.1.3-1
+  libXdamage1-1.1.1-1
   libXfixes3-4.0.3-1
 
 Build requirements:
@@ -53,7 +55,7 @@ Build requirements:
   cygport-0.3.6-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.8-1
+  gtk-doc-1.9-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -396,6 +398,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.6-2 -----
+Rebuilt for updated dependencies.
 
 ----- version 0.10.6-1 -----
 Version bump.
