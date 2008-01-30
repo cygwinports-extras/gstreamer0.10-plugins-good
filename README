@@ -37,8 +37,6 @@ Runtime requirements:
   libshout3-2.2.2-1
 (speex)
   libspeex1-1.2beta2-1
-(taglib)
-  taglib-1.4-1
 (wavpack)
   libwavpack1-4.41.0-1
 (ximagesrc)
@@ -98,7 +96,6 @@ This will create:
   /usr/src/gstreamer010-plugins-oss-0.10.6-X.tar.bz2
   /usr/src/gstreamer010-plugins-shout2-0.10.6-X.tar.bz2
   /usr/src/gstreamer010-plugins-speex-0.10.6-X.tar.bz2
-  /usr/src/gstreamer010-plugins-taglib-0.10.6-X.tar.bz2
   /usr/src/gstreamer010-plugins-wavpack-0.10.6-X.tar.bz2
   /usr/src/gstreamer010-plugins-ximagesrc-0.10.6-X.tar.bz2
 
@@ -259,10 +256,6 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstspeex.dll
   /usr/lib/gstreamer-0.10/libgstspeex.la
 
-(gstreamer010-plugins-taglib)
-  /usr/lib/gstreamer-0.10/cyggsttaglib.dll
-  /usr/lib/gstreamer-0.10/libgsttaglib.la
-
 (gstreamer010-plugins-wavpack)
   /usr/lib/gstreamer-0.10/cyggstwavpack.dll
   /usr/lib/gstreamer-0.10/libgstwavpack.la
@@ -398,6 +391,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.6-3 -----
+Rebuilt.
 
 ----- version 0.10.6-2 -----
 Rebuilt for updated dependencies.
