@@ -10,6 +10,7 @@ usr/lib/gstreamer-0.10/*gstcutter.*
 usr/lib/gstreamer-0.10/*gstdebug.*
 usr/lib/gstreamer-0.10/*gstefence.*
 usr/lib/gstreamer-0.10/*gsteffectv.*
+usr/lib/gstreamer-0.10/*gstequalizer.*
 usr/lib/gstreamer-0.10/*gstflxdec.*
 usr/lib/gstreamer-0.10/*gstgamma.*
 usr/lib/gstreamer-0.10/*gstgoom.*
@@ -18,12 +19,14 @@ usr/lib/gstreamer-0.10/*gstid3demux.*
 usr/lib/gstreamer-0.10/*gstlevel.*
 usr/lib/gstreamer-0.10/*gstmatroska.*
 usr/lib/gstreamer-0.10/*gstmulaw.*
+usr/lib/gstreamer-0.10/*gstmultifile.*
 usr/lib/gstreamer-0.10/*gstmultipart.*
 usr/lib/gstreamer-0.10/*gstnavigationtest.*
 usr/lib/gstreamer-0.10/*gstqtdemux.*
 usr/lib/gstreamer-0.10/*gstrtp.*
 usr/lib/gstreamer-0.10/*gstrtsp.*
 usr/lib/gstreamer-0.10/*gstsmpte.*
+usr/lib/gstreamer-0.10/*gstspectrum.*
 usr/lib/gstreamer-0.10/*gstudp.*
 usr/lib/gstreamer-0.10/*gstvideobalance.*
 usr/lib/gstreamer-0.10/*gstvideobox.*
