@@ -14,6 +14,7 @@ usr/lib/gstreamer-0.10/*gstequalizer.*
 usr/lib/gstreamer-0.10/*gstflxdec.*
 usr/lib/gstreamer-0.10/*gstgamma.*
 usr/lib/gstreamer-0.10/*gstgoom.*
+usr/lib/gstreamer-0.10/*gstgoom2k1.*
 usr/lib/gstreamer-0.10/*gsticydemux.*
 usr/lib/gstreamer-0.10/*gstid3demux.*
 usr/lib/gstreamer-0.10/*gstlevel.*
