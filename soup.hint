@@ -1,0 +1,6 @@
+category: Audio Web
+requires: cygwin glib2 gstreamer010 gstreamer010-plugins-base libsoup24
+external-source: gstreamer010-plugins-good
+sdesc: "SOUP plugin for the GStreamer multimedia framework (0.10 branch)"
+ldesc: "SOUP plugin for the GStreamer multimedia framework (0.10 branch)"
+

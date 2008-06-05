@@ -35,6 +35,8 @@ Runtime requirements:
   libpng12-1.2.26-1
 (shout2)
   libshout3-2.2.2-1
+(soup)
+  libsoup24-2.4.1-1
 (speex)
   libspeex1-1.2beta2-1
 (wavpack)
@@ -269,6 +271,10 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstshout2.dll
   /usr/lib/gstreamer-0.10/libgstshout2.la
 
+(gstreamer010-plugins-soup)
+  /usr/lib/gstreamer-0.10/cyggstsouphttpsrc.dll
+  /usr/lib/gstreamer-0.10/libgstsouphttpsrc.la
+
 (gstreamer010-plugins-speex)
   /usr/lib/gstreamer-0.10/cyggstspeex.dll
   /usr/lib/gstreamer-0.10/libgstspeex.la
@@ -388,6 +394,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-shout2send.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-smpte.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-spectrum.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-soup.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-speex.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-taglib.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-udp.html
