@@ -3,11 +3,11 @@ gstreamer010-plugins-good
 A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  glib2-2.14.6-1
-  gstreamer010-0.10.19-1
-  gstreamer010-plugins-base-0.10.19-1
-  liboil03-0.3.11-2
+  cygwin-1.5.25-15
+  glib2-2.16.3-1
+  gstreamer010-0.10.20-1
+  gstreamer010-plugins-base-0.10.20-1
+  liboil03-0.3.15-1
 
 (aalib)
   libaa1-1.4rc5-1
@@ -22,9 +22,9 @@ Runtime requirements:
 (flac)
   libFLAC8-1.2.1-2
 (gconf)
-  GConf2-2.20.1-1
+  GConf2-2.22.0-1
 (gdk_pixbuf)
-  gdk-pixbuf2-2.12.9-1
+  gdk-pixbuf2-2.12.10-1
 (jpeg)
   libjpeg62-6b-12
 (libcaca)
@@ -32,13 +32,13 @@ Runtime requirements:
 (libdv)
   libdv4-1.0.0-1
 (libpng)
-  libpng12-1.2.26-1
+  libpng12-1.2.29-1
 (shout2)
   libshout3-2.2.2-1
 (soup)
   libsoup24-2.4.1-1
 (speex)
-  libspeex1-1.2beta2-1
+  libspeex1-1.2beta3.2-1
 (wavpack)
   libwavpack1-4.41.0-1
 (ximagesrc)
@@ -51,10 +51,10 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.10-1
+  cygport-0.3.11-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.9-1
+  gtk-doc-1.10-1
   libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
@@ -240,6 +240,9 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstflac.la
 
 (gstreamer010-plugins-gconf)
+  /etc/gconf/schemas/gstreamer-0.10.schemas
+  /etc/postinstall/gstreamer010-plugins-good.sh
+  /etc/preremove/gstreamer010-plugins-good.sh
   /usr/lib/gstreamer-0.10/cyggstgconfelements.dll
   /usr/lib/gstreamer-0.10/libgstgconfelements.la
 
@@ -441,6 +444,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.8-2 -----
+Rebuilt for GStreamer 0.10.20.
 
 ----- version 0.10.8-1 -----
 Version bump.

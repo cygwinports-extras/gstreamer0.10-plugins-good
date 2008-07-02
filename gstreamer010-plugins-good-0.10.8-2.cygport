@@ -1,0 +1,27 @@
+# directdraw and directsound require DirectX headers not in w32api
+# taglib crashes since 0.10.15
+GST_PLUGINS_EXT="aalib annodex cairo cdio esd flac gconf gdk_pixbuf jpeg
+                 libcaca libdv libpng oss shout2 soup speex wavpack ximagesrc"
+inherit gst-plugins
+
+PKG_NAMES="${PN} ${PN}-doc"
+PKG_HINTS="good doc"
+PKG_LISTS="good"
+PKG_CONTENTS[1]='usr/share/gtk-doc/'
+
+n=2
+for ext in ${GST_PLUGINS_EXT}
+do
+	PKG_NAMES+=" ${PN%-good}-${ext}"
+	PKG_HINTS+=" ${ext}"
+	case ${ext} in
+		aalib|libcaca|libdv|libpng)
+			PKG_CONTENTS[$((n++))]="${GST_PLUGINDIR#/}/*gst${ext/lib}*" ;;
+		gconf)
+			PKG_CONTENTS[$((n++))]="etc/ ${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
+		*)	PKG_CONTENTS[$((n++))]="${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
+	esac
+done
+unset ext n
+
+MAKEOPTS+=" SUBDIRS_CHECK="
