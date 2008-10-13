@@ -1,0 +1,129 @@
+--- origsrc/gst-plugins-good-0.10.10/gst/udp/Makefile.am	2008-07-19 08:16:03.000000000 -0500
++++ src/gst-plugins-good-0.10.10/gst/udp/Makefile.am	2008-10-13 00:28:40.970662300 -0500
+@@ -18,6 +18,7 @@
+ # with glibc >= 2.8 when including netdb.h (see glibc sources bug 6452)
+ libgstudp_la_CFLAGS = $(GST_CFLAGS) $(GST_PLUGINS_BASE_CFLAGS) -D_GNU_SOURCE
+ libgstudp_la_LIBADD = $(GST_BASE_LIBS) $(GST_PLUGINS_BASE_LIBS) $(WIN32_LIBS)\
++		      -lgetaddrinfo \
+ 		      -lgstnetbuffer-@GST_MAJORMINOR@
+ libgstudp_la_LDFLAGS = $(GST_PLUGIN_LDFLAGS)
+ 
+--- origsrc/gst-plugins-good-0.10.10/gst/udp/gstmultiudpsink.c	2008-07-19 08:16:03.000000000 -0500
++++ src/gst-plugins-good-0.10.10/gst/udp/gstmultiudpsink.c	2008-10-13 00:25:48.392537300 -0500
+@@ -602,7 +602,9 @@
+ 
+   if (sink->sockfd == -1) {
+     /* create sender socket try IP6, fall back to IP4 */
++#ifndef G_WITH_CYGWIN
+     if ((sink->sock = socket (AF_INET6, SOCK_DGRAM, 0)) == -1)
++#endif
+       if ((sink->sock = socket (AF_INET, SOCK_DGRAM, 0)) == -1)
+         goto no_socket;
+ 
+--- origsrc/gst-plugins-good-0.10.10/gst/udp/gstudpnetutils.c	2008-07-24 17:34:40.000000000 -0500
++++ src/gst-plugins-good-0.10.10/gst/udp/gstudpnetutils.c	2008-10-13 00:27:40.251912300 -0500
+@@ -33,6 +33,10 @@
+ 
+ #include "gstudpnetutils.h"
+ 
++#ifdef G_WITH_CYGWIN
++#include <getaddrinfo.h>
++#endif
++
+ #ifdef G_OS_WIN32
+ 
+ gboolean
+@@ -79,7 +83,11 @@
+ 
+   nres = res;
+   while (nres) {
++#ifdef G_WITH_CYGWIN
++    if (nres->ai_family == AF_INET)
++#else
+     if (nres->ai_family == AF_INET || nres->ai_family == AF_INET6)
++#endif
+       break;
+     nres = nres->ai_next;
+   }
+@@ -117,6 +125,7 @@
+         return ret;
+       break;
+     }
++#ifndef G_WITH_CYGWIN
+     case AF_INET6:
+     {
+       if ((ret =
+@@ -131,6 +140,7 @@
+ 
+       break;
+     }
++#endif
+     default:
+       errno = EAFNOSUPPORT;
+   }
+@@ -159,6 +169,7 @@
+ 
+       break;
+     }
++#ifndef G_WITH_CYGWIN
+     case AF_INET6:
+     {
+       struct ipv6_mreq mreq6;
+@@ -175,6 +186,7 @@
+ 
+       break;
+     }
++#endif
+     default:
+ #ifdef G_OS_WIN32
+       WSASetLastError (WSAEAFNOSUPPORT);
+@@ -206,6 +218,7 @@
+     }
+       break;
+ 
++#ifndef G_WITH_CYGWIN
+     case AF_INET6:
+     {
+       struct ipv6_mreq mreq6;
+@@ -221,6 +234,7 @@
+         return ret;
+     }
+       break;
++#endif
+ 
+     default:
+ #ifdef G_OS_WIN32
+@@ -247,6 +261,7 @@
+     }
+       break;
+ 
++#ifndef G_WITH_CYGWIN
+     case AF_INET6:
+     {
+       struct sockaddr_in6 *addr6 = (struct sockaddr_in6 *) addr;
+@@ -254,6 +269,7 @@
+       ret = IN6_IS_ADDR_MULTICAST (&addr6->sin6_addr);
+     }
+       break;
++#endif
+ 
+     default:
+ #ifdef G_OS_WIN32
+--- origsrc/gst-plugins-good-0.10.10/gst/udp/gstudpsrc.c	2008-07-24 17:34:42.000000000 -0500
++++ src/gst-plugins-good-0.10.10/gst/udp/gstudpsrc.c	2008-10-13 00:25:17.533162300 -0500
+@@ -507,6 +507,7 @@
+           ((struct sockaddr_in *) &tmpaddr)->sin_port);
+     }
+       break;
++#ifndef G_WITH_CYGWIN
+     case AF_INET6:
+     {
+       guint8 ip6[16];
+@@ -516,6 +517,7 @@
+       gst_netaddress_set_ip6_address (&outbuf->from, ip6,
+           ((struct sockaddr_in *) &tmpaddr)->sin_port);
+     }
++#endif
+       break;
+     default:
+ #ifdef G_OS_WIN32

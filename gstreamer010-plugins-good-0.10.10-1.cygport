@@ -1,8 +1,10 @@
 # directdraw and directsound require DirectX headers not in w32api
 # taglib crashes since 0.10.15
-GST_PLUGINS_EXT="aalib annodex cairo cdio esd flac gconf gdk_pixbuf jpeg
+GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg
                  libcaca libdv libpng oss shout2 soup speex wavpack ximagesrc"
 inherit gst-plugins
+
+PATCH_URI="0.10.10-ipv6.patch"
 
 PKG_NAMES="${PN} ${PN}-doc"
 PKG_HINTS="good doc"
@@ -24,4 +26,5 @@ do
 done
 unset ext n
 
+CYGCONF_ARGS+=" ac_cv_header_winsock2_h=no"
 MAKEOPTS+=" SUBDIRS_CHECK="

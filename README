@@ -4,43 +4,41 @@ A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.3-1
-  gstreamer010-0.10.20-1
-  gstreamer010-plugins-base-0.10.20-1
+  glib2-2.16.6-1
+  gstreamer010-0.10.21-1
+  gstreamer010-plugins-base-0.10.21-1
   liboil03-0.3.15-1
 
 (aalib)
   libaa1-1.4rc5-1
 (annodex)
-  libxml2-2.6.32-1
+  libxml2-2.6.32-2
 (cairo)
-  libcairo2-1.4.14-1
-(cdio)
-  libcdio7-0.80.0-2
+  libcairo2-1.6.4-1
 (esd)
-  libesound0-0.2.38-1
+  esound-0.2.40-1
 (flac)
   libFLAC8-1.2.1-2
 (gconf)
   GConf2-2.22.0-1
 (gdk_pixbuf)
-  gdk-pixbuf2-2.12.10-1
+  gdk-pixbuf2-2.12.12-1
 (jpeg)
   libjpeg62-6b-12
 (libcaca)
-  libcaca0-0.99.13-1
+  libcaca0-0.99.14-2
 (libdv)
   libdv4-1.0.0-1
 (libpng)
-  libpng12-1.2.29-1
+  libpng12-1.2.32-1
 (shout2)
   libshout3-2.2.2-1
 (soup)
   libsoup24-2.4.1-1
 (speex)
-  libspeex1-1.2beta3.2-1
+  libspeex1-1.2rc1-1
 (wavpack)
-  libwavpack1-4.41.0-1
+  libwavpack1-4.50.1-1
 (ximagesrc)
   libX11_6-1.1.3-1
   libXdamage1-1.1.1-1
@@ -48,17 +46,17 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.11-1
+  binutils-20080624-2
+  cygport-0.4.1-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.10-1
-  libtool-2.2.2-2
+  gtk-doc-1.10-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
-  python-2.5.2-1
+  pkg-config-0.23a-2
+  python-2.5.2-3
   python-xml-0.8.4-2
   sed-4.1.5-2
 
@@ -71,34 +69,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-plugins-good-0.10.8-X-src.tar.bz2
+  unpack gstreamer010-plugins-good-0.10.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-plugins-good-0.10.8-X.cygport all
+  cygport ./gstreamer010-plugins-good-0.10.10-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-plugins-good-0.10.8-X-src.tar.bz2
-  /usr/src/gstreamer010-plugins-good-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-good-doc-0.10.8-X.tar.bz2
+  /usr/src/gstreamer010-plugins-good-0.10.10-X-src.tar.bz2
+  /usr/src/gstreamer010-plugins-good-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-good-doc-0.10.10-X.tar.bz2
 
-  /usr/src/gstreamer010-plugins-aalib-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-annodex-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-cairo-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-cdio-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-esd-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-flac-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gconf-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gdk_pixbuf-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-jpeg-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libcaca-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libdv-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libpng-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-oss-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-shout2-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-speex-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-wavpack-0.10.8-X.tar.bz2
-  /usr/src/gstreamer010-plugins-ximagesrc-0.10.8-X.tar.bz2
+  /usr/src/gstreamer010-plugins-aalib-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-annodex-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-cairo-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-esd-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-flac-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-gconf-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-gdk_pixbuf-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-jpeg-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libcaca-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libdv-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libpng-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-oss-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-shout2-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-speex-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-wavpack-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-ximagesrc-0.10.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -124,6 +121,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstgoom2k1.dll
   /usr/lib/gstreamer-0.10/cyggsticydemux.dll
   /usr/lib/gstreamer-0.10/cyggstid3demux.dll
+  /usr/lib/gstreamer-0.10/cyggstinterleave.dll
   /usr/lib/gstreamer-0.10/cyggstlevel.dll
   /usr/lib/gstreamer-0.10/cyggstmatroska.dll
   /usr/lib/gstreamer-0.10/cyggstmulaw.dll
@@ -131,6 +129,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstmultipart.dll
   /usr/lib/gstreamer-0.10/cyggstnavigationtest.dll
   /usr/lib/gstreamer-0.10/cyggstqtdemux.dll
+  /usr/lib/gstreamer-0.10/cyggstreplaygain.dll
   /usr/lib/gstreamer-0.10/cyggstrtp.dll
   /usr/lib/gstreamer-0.10/cyggstrtsp.dll
   /usr/lib/gstreamer-0.10/cyggstsmpte.dll
@@ -162,6 +161,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstgoom2k1.la
   /usr/lib/gstreamer-0.10/libgsticydemux.la
   /usr/lib/gstreamer-0.10/libgstid3demux.la
+  /usr/lib/gstreamer-0.10/libgstinterleave.la
   /usr/lib/gstreamer-0.10/libgstlevel.la
   /usr/lib/gstreamer-0.10/libgstmatroska.la
   /usr/lib/gstreamer-0.10/libgstmulaw.la
@@ -169,9 +169,9 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstmultipart.la
   /usr/lib/gstreamer-0.10/libgstnavigationtest.la
   /usr/lib/gstreamer-0.10/libgstqtdemux.la
+  /usr/lib/gstreamer-0.10/libgstreplaygain.la
   /usr/lib/gstreamer-0.10/libgstrtp.la
   /usr/lib/gstreamer-0.10/libgstrtsp.la
-  /usr/lib/gstreamer-0.10/libgstshout2.la
   /usr/lib/gstreamer-0.10/libgstsmpte.la
   /usr/lib/gstreamer-0.10/libgstspectrum.la
   /usr/lib/gstreamer-0.10/libgstudp.la
@@ -182,13 +182,13 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstvideomixer.la
   /usr/lib/gstreamer-0.10/libgstwavenc.la
   /usr/lib/gstreamer-0.10/libgstwavparse.la
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/ABOUT-NLS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/COPYING
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/INSTALL
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/NEWS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.8/README
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/COPYING
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/INSTALL
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/NEWS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.10/README
   /usr/share/locale/af/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/az/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/bg/LC_MESSAGES/gst-plugins-good-0.10.mo
@@ -198,13 +198,18 @@ Files included in the binary packages:
   /usr/share/locale/es/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/eu/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/fi/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/fr/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/hu/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/id/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/it/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/ja/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/lt/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/nb/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/nl/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/or/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/pl/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/ru/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/sk/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/sq/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/sr/LC_MESSAGES/gst-plugins-good-0.10.mo
@@ -226,10 +231,6 @@ Files included in the binary packages:
 (gstreamer010-plugins-cairo)
   /usr/lib/gstreamer-0.10/cyggstcairo.dll
   /usr/lib/gstreamer-0.10/libgstcairo.la
-
-(gstreamer010-plugins-cdio)
-  /usr/lib/gstreamer-0.10/cyggstcdio.dll
-  /usr/lib/gstreamer-0.10/libgstcdio.la
 
 (gstreamer010-plugins-esd)
   /usr/lib/gstreamer-0.10/cyggstesd.dll
@@ -291,10 +292,14 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstximagesrc.la
 
 (gstreamer010-plugins-good-doc)
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstIirEqualizer.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstVideoMixerPad.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch01.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch02.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch03.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-0.10.devhelp
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-0.10.devhelp2
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-aasink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-alphacolor.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-apedemux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-apev2mux.html
@@ -303,6 +308,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiocheblimit.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiodynamic.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audioinvert.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiokaraoke.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiopanorama.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiowsincband.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-audiowsinclimit.html
@@ -311,12 +317,14 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-avidemux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-avimux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-avisubtitle.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cacasink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cairotimeoverlay.html
-  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cdiocddasrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cmmldec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-cmmlenc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-deinterleave.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-directdrawsink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-directsoundsink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-dv1394src.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-dvdec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-dvdemux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-equalizer-10bands.html
@@ -325,12 +333,15 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-esdsink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-flacdec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-gamma.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-gdkpixbufsink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-goom.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-goom2k1.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-halaudiosink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-halaudiosrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-icydemux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-id3demux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-id3v2mux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-interleave.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-jpegdec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-jpegenc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-level.html
@@ -359,7 +370,6 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-avi.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cacasink.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cairo.html
-  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cdio.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-cutter.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-debug.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-directdraw.html
@@ -375,11 +385,12 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-gconfelements.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-gdkpixbuf.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-goom.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-goom2k1.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-halelements.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-icydemux.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-id3demux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-interleave.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-jpeg.html
-  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-ladspa.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-level.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-matroska.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-monoscope.html
@@ -391,13 +402,15 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-osxaudio.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-osxvideo.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-png.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-pulseaudio.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-quicktime.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-replaygain.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-rtp.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-rtsp.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-shout2send.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-smpte.html
-  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-spectrum.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-soup.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-spectrum.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-speex.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-taglib.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-plugin-udp.html
@@ -415,12 +428,22 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-pngdec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-pngenc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-progressreport.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-pulsemixer.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-pulsesink.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-pulsesrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-qtdemux.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-rganalysis.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-rglimiter.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-rgvolume.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-rtpdec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-rtspsrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smokedec.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smokeenc.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smpte.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-smptealpha.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-souphttpsrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-spectrum.html
+  /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-taginject.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-udpsrc.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-v4l2src.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/gst-plugins-good-plugins-videobalance.html
@@ -444,6 +467,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.10-1 -----
+Version bump.
 
 ----- version 0.10.8-2 -----
 Rebuilt for GStreamer 0.10.20.
