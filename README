@@ -49,7 +49,7 @@ Build requirements:
   autoconf2.5-2.63-1
   automake1.9-1.9.6-2
   binutils-20080624-2
-  cygport-0.4.1-1
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gtk-doc-1.10-2
@@ -69,33 +69,32 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-plugins-good-0.10.10-X-src.tar.bz2
+  unpack gstreamer010-plugins-good-0.10.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-plugins-good-0.10.10-X.cygport all
+  cygport ./gstreamer010-plugins-good-0.10.11-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-plugins-good-0.10.10-X-src.tar.bz2
-  /usr/src/gstreamer010-plugins-good-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-good-doc-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-good-0.10.11-X-src.tar.bz2
+  /usr/src/gstreamer010-plugins-good-0.10.11-X.tar.bz2
 
-  /usr/src/gstreamer010-plugins-aalib-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-annodex-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-cairo-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-esd-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-flac-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gconf-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gdk_pixbuf-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-jpeg-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libcaca-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libdv-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libpng-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-oss-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-shout2-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-speex-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-wavpack-0.10.10-X.tar.bz2
-  /usr/src/gstreamer010-plugins-ximagesrc-0.10.10-X.tar.bz2
+  /usr/src/gstreamer010-plugins-aalib-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-annodex-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-cairo-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-esd-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-flac-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-gconf-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-gdk_pixbuf-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-jpeg-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libcaca-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libdv-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-libpng-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-oss-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-shout2-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-speex-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-wavpack-0.10.11-X.tar.bz2
+  /usr/src/gstreamer010-plugins-ximagesrc-0.10.11-X.tar.bz2
 
 -------------------------------------------
 
@@ -182,116 +181,13 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstvideomixer.la
   /usr/lib/gstreamer-0.10/libgstwavenc.la
   /usr/lib/gstreamer-0.10/libgstwavparse.la
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/ABOUT-NLS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/COPYING
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/INSTALL
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/NEWS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.10/README
-  /usr/share/locale/af/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/az/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/bg/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/cs/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/da/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/es/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/eu/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/fi/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/fr/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/hu/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/id/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/it/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/ja/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/lt/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/nb/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/nl/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/or/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/pl/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/ru/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/sk/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/sq/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/sr/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/sv/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/uk/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/vi/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/zh_HK/LC_MESSAGES/gst-plugins-good-0.10.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/gst-plugins-good-0.10.mo
-
-(gstreamer010-plugins-aalib)
-  /usr/lib/gstreamer-0.10/cyggstaasink.dll
-  /usr/lib/gstreamer-0.10/libgstaasink.la
-
-(gstreamer010-plugins-annodex)
-  /usr/lib/gstreamer-0.10/cyggstannodex.dll
-  /usr/lib/gstreamer-0.10/libgstannodex.la
-
-(gstreamer010-plugins-cairo)
-  /usr/lib/gstreamer-0.10/cyggstcairo.dll
-  /usr/lib/gstreamer-0.10/libgstcairo.la
-
-(gstreamer010-plugins-esd)
-  /usr/lib/gstreamer-0.10/cyggstesd.dll
-  /usr/lib/gstreamer-0.10/libgstesd.la
-
-(gstreamer010-plugins-flac)
-  /usr/lib/gstreamer-0.10/cyggstflac.dll
-  /usr/lib/gstreamer-0.10/libgstflac.la
-
-(gstreamer010-plugins-gconf)
-  /etc/gconf/schemas/gstreamer-0.10.schemas
-  /etc/postinstall/gstreamer010-plugins-good.sh
-  /etc/preremove/gstreamer010-plugins-good.sh
-  /usr/lib/gstreamer-0.10/cyggstgconfelements.dll
-  /usr/lib/gstreamer-0.10/libgstgconfelements.la
-
-(gstreamer010-plugins-gdk_pixbuf)
-  /usr/lib/gstreamer-0.10/cyggstgdkpixbuf.dll
-  /usr/lib/gstreamer-0.10/libgstgdkpixbuf.la
-
-(gstreamer010-plugins-jpeg)
-  /usr/lib/gstreamer-0.10/cyggstjpeg.dll
-  /usr/lib/gstreamer-0.10/libgstjpeg.la
-
-(gstreamer010-plugins-libcaca)
-  /usr/lib/gstreamer-0.10/cyggstcacasink.dll
-  /usr/lib/gstreamer-0.10/libgstcacasink.la
-
-(gstreamer010-plugins-libdv)
-  /usr/lib/gstreamer-0.10/cyggstdv.dll
-  /usr/lib/gstreamer-0.10/libgstdv.la
-
-(gstreamer010-plugins-libpng)
-  /usr/lib/gstreamer-0.10/cyggstpng.dll
-  /usr/lib/gstreamer-0.10/libgstpng.la
-
-(gstreamer010-plugins-oss)
-  /usr/lib/gstreamer-0.10/cyggstossaudio.dll
-  /usr/lib/gstreamer-0.10/libgstossaudio.la
-
-(gstreamer010-plugins-shout2)
-  /usr/lib/gstreamer-0.10/cyggstshout2.dll
-  /usr/lib/gstreamer-0.10/libgstshout2.la
-
-(gstreamer010-plugins-soup)
-  /usr/lib/gstreamer-0.10/cyggstsouphttpsrc.dll
-  /usr/lib/gstreamer-0.10/libgstsouphttpsrc.la
-
-(gstreamer010-plugins-speex)
-  /usr/lib/gstreamer-0.10/cyggstspeex.dll
-  /usr/lib/gstreamer-0.10/libgstspeex.la
-
-(gstreamer010-plugins-wavpack)
-  /usr/lib/gstreamer-0.10/cyggstwavpack.dll
-  /usr/lib/gstreamer-0.10/libgstwavpack.la
-
-(gstreamer010-plugins-ximagesrc)
-  /usr/lib/gstreamer-0.10/cyggstximagesrc.dll
-  /usr/lib/gstreamer-0.10/libgstximagesrc.la
-
-(gstreamer010-plugins-good-doc)
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/ABOUT-NLS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/AUTHORS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/COPYING
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/ChangeLog
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/INSTALL
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/NEWS
+  /usr/share/doc/gstreamer010-plugins-good-0.10.11/README
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstIirEqualizer.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstVideoMixerPad.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch01.html
@@ -463,10 +359,114 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/right.png
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/style.css
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/up.png
+  /usr/share/locale/af/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/az/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/bg/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/cs/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/da/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/es/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/eu/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/fi/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/fr/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/hu/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/id/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/it/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/ja/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/lt/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/nb/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/nl/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/or/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/pl/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/ru/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sk/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sq/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sr/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/sv/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/uk/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/vi/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gst-plugins-good-0.10.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gst-plugins-good-0.10.mo
+
+(gstreamer010-plugins-aalib)
+  /usr/lib/gstreamer-0.10/cyggstaasink.dll
+  /usr/lib/gstreamer-0.10/libgstaasink.la
+
+(gstreamer010-plugins-annodex)
+  /usr/lib/gstreamer-0.10/cyggstannodex.dll
+  /usr/lib/gstreamer-0.10/libgstannodex.la
+
+(gstreamer010-plugins-cairo)
+  /usr/lib/gstreamer-0.10/cyggstcairo.dll
+  /usr/lib/gstreamer-0.10/libgstcairo.la
+
+(gstreamer010-plugins-esd)
+  /usr/lib/gstreamer-0.10/cyggstesd.dll
+  /usr/lib/gstreamer-0.10/libgstesd.la
+
+(gstreamer010-plugins-flac)
+  /usr/lib/gstreamer-0.10/cyggstflac.dll
+  /usr/lib/gstreamer-0.10/libgstflac.la
+
+(gstreamer010-plugins-gconf)
+  /etc/gconf/schemas/gstreamer-0.10.schemas
+  /etc/postinstall/gstreamer010-plugins-good.sh
+  /etc/preremove/gstreamer010-plugins-good.sh
+  /usr/lib/gstreamer-0.10/cyggstgconfelements.dll
+  /usr/lib/gstreamer-0.10/libgstgconfelements.la
+
+(gstreamer010-plugins-gdk_pixbuf)
+  /usr/lib/gstreamer-0.10/cyggstgdkpixbuf.dll
+  /usr/lib/gstreamer-0.10/libgstgdkpixbuf.la
+
+(gstreamer010-plugins-jpeg)
+  /usr/lib/gstreamer-0.10/cyggstjpeg.dll
+  /usr/lib/gstreamer-0.10/libgstjpeg.la
+
+(gstreamer010-plugins-libcaca)
+  /usr/lib/gstreamer-0.10/cyggstcacasink.dll
+  /usr/lib/gstreamer-0.10/libgstcacasink.la
+
+(gstreamer010-plugins-libdv)
+  /usr/lib/gstreamer-0.10/cyggstdv.dll
+  /usr/lib/gstreamer-0.10/libgstdv.la
+
+(gstreamer010-plugins-libpng)
+  /usr/lib/gstreamer-0.10/cyggstpng.dll
+  /usr/lib/gstreamer-0.10/libgstpng.la
+
+(gstreamer010-plugins-oss)
+  /usr/lib/gstreamer-0.10/cyggstossaudio.dll
+  /usr/lib/gstreamer-0.10/libgstossaudio.la
+
+(gstreamer010-plugins-shout2)
+  /usr/lib/gstreamer-0.10/cyggstshout2.dll
+  /usr/lib/gstreamer-0.10/libgstshout2.la
+
+(gstreamer010-plugins-soup)
+  /usr/lib/gstreamer-0.10/cyggstsouphttpsrc.dll
+  /usr/lib/gstreamer-0.10/libgstsouphttpsrc.la
+
+(gstreamer010-plugins-speex)
+  /usr/lib/gstreamer-0.10/cyggstspeex.dll
+  /usr/lib/gstreamer-0.10/libgstspeex.la
+
+(gstreamer010-plugins-wavpack)
+  /usr/lib/gstreamer-0.10/cyggstwavpack.dll
+  /usr/lib/gstreamer-0.10/libgstwavpack.la
+
+(gstreamer010-plugins-ximagesrc)
+  /usr/lib/gstreamer-0.10/cyggstximagesrc.dll
+  /usr/lib/gstreamer-0.10/libgstximagesrc.la
 
 ------------------
 
 Port Notes:
+
+----- version 0.10.11-1 -----
+Version bump.
 
 ----- version 0.10.10-1 -----
 Version bump.

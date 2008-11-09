@@ -39,4 +39,5 @@ usr/lib/gstreamer-0.10/*gstvideomixer.*
 usr/lib/gstreamer-0.10/*gstwavenc.*
 usr/lib/gstreamer-0.10/*gstwavparse.*
 usr/share/doc/
+usr/share/gtk-doc/
 usr/share/locale/

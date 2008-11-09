@@ -4,27 +4,25 @@ GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg
                  libcaca libdv libpng oss shout2 soup speex wavpack ximagesrc"
 inherit gst-plugins
 
-PATCH_URI="0.10.10-ipv6.patch"
+PATCH_URI="0.10.11-ipv6.patch"
 
-PKG_NAMES="${PN} ${PN}-doc"
-PKG_HINTS="good doc"
+PKG_NAMES="${PN}"
+PKG_HINTS="good"
 PKG_LISTS="good"
-PKG_CONTENTS[1]='usr/share/gtk-doc/'
 
-n=2
 for ext in ${GST_PLUGINS_EXT}
 do
 	PKG_NAMES+=" ${PN%-good}-${ext}"
 	PKG_HINTS+=" ${ext}"
 	case ${ext} in
 		aalib|libcaca|libdv|libpng)
-			PKG_CONTENTS[$((n++))]="${GST_PLUGINDIR#/}/*gst${ext/lib}*" ;;
+			declare gstreamer010_plugins_${ext}_CONTENTS="${GST_PLUGINDIR#/}/*gst${ext/lib}*" ;;
 		gconf)
-			PKG_CONTENTS[$((n++))]="etc/ ${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
-		*)	PKG_CONTENTS[$((n++))]="${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
+			declare gstreamer010_plugins_${ext}_CONTENTS="etc/ ${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
+		*)	declare gstreamer010_plugins_${ext}_CONTENTS="${GST_PLUGINDIR#/}/*gst${ext//_}*" ;;
 	esac
 done
-unset ext n
+unset ext
 
 CYGCONF_ARGS+=" ac_cv_header_winsock2_h=no"
 MAKEOPTS+=" SUBDIRS_CHECK="

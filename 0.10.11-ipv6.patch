@@ -127,3 +127,15 @@
        break;
      default:
  #ifdef G_OS_WIN32
+@@ -777,9 +777,11 @@
+       case AF_INET:
+         len = sizeof (struct sockaddr_in);
+         break;
++#ifndef G_WITH_CYGWIN
+       case AF_INET6:
+         len = sizeof (struct sockaddr_in6);
+         break;
++#endif
+       default:
+         /* don't know, Screw MacOS and use the full length */
+         len = sizeof (src->myaddr);
