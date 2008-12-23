@@ -20,6 +20,7 @@ usr/lib/gstreamer-0.10/*gstid3demux.*
 usr/lib/gstreamer-0.10/*gstinterleave.*
 usr/lib/gstreamer-0.10/*gstlevel.*
 usr/lib/gstreamer-0.10/*gstmatroska.*
+usr/lib/gstreamer-0.10/*gstmonoscope.*
 usr/lib/gstreamer-0.10/*gstmulaw.*
 usr/lib/gstreamer-0.10/*gstmultifile.*
 usr/lib/gstreamer-0.10/*gstmultipart.*

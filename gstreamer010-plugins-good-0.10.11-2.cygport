@@ -24,5 +24,4 @@ do
 done
 unset ext
 
-CYGCONF_ARGS+=" ac_cv_header_winsock2_h=no"
 MAKEOPTS+=" SUBDIRS_CHECK="

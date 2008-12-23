@@ -4,59 +4,59 @@ A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.6-1
-  gstreamer010-0.10.21-1
   gstreamer010-plugins-base-0.10.21-1
-  liboil03-0.3.15-1
+  libglib2.0_0-2.18.3-1
+  libgstreamer0.10_0-0.10.21-2
+  liboil0.3_0-0.3.15-2
 
 (aalib)
   libaa1-1.4rc5-1
 (annodex)
-  libxml2-2.6.32-2
+  libxml2-2.7.2-1
 (cairo)
-  libcairo2-1.6.4-1
+  libcairo2-1.8.4-1
 (esd)
-  esound-0.2.40-1
+  esound-0.2.41-1
 (flac)
   libFLAC8-1.2.1-2
 (gconf)
-  GConf2-2.22.0-1
+  libgconf2_4-2.24.0-1
 (gdk_pixbuf)
-  gdk-pixbuf2-2.12.12-1
+  libgdk_pixbuf2.0_0-2.14.6-1
 (jpeg)
   libjpeg62-6b-12
 (libcaca)
-  libcaca0-0.99.14-2
+  libcaca0-0.99.16-1
 (libdv)
   libdv4-1.0.0-1
 (libpng)
-  libpng12-1.2.32-1
+  libpng12-1.2.33-1
 (shout2)
   libshout3-2.2.2-1
 (soup)
-  libsoup24-2.4.1-1
+  libsoup2.4_1-2.24.2.1-1
 (speex)
   libspeex1-1.2rc1-1
 (wavpack)
   libwavpack1-4.50.1-1
 (ximagesrc)
-  libX11_6-1.1.3-1
-  libXdamage1-1.1.1-1
-  libXfixes3-4.0.3-1
+  libX11_6-1.1.5-1
+  libXdamage1-1.1.1-2
+  libXfixes3-4.0.3-2
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.9-1.9.6-2
+  automake1.9-1.9.6-3
   binutils-20080624-2
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.10-2
+  gtk-doc-1.11-2
   libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
-  python-2.5.2-3
+  python-2.5.2-4
   python-xml-0.8.4-2
   sed-4.1.5-2
 
@@ -123,6 +123,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstinterleave.dll
   /usr/lib/gstreamer-0.10/cyggstlevel.dll
   /usr/lib/gstreamer-0.10/cyggstmatroska.dll
+  /usr/lib/gstreamer-0.10/cyggstmonoscope.dll
   /usr/lib/gstreamer-0.10/cyggstmulaw.dll
   /usr/lib/gstreamer-0.10/cyggstmultifile.dll
   /usr/lib/gstreamer-0.10/cyggstmultipart.dll
@@ -163,6 +164,7 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstinterleave.la
   /usr/lib/gstreamer-0.10/libgstlevel.la
   /usr/lib/gstreamer-0.10/libgstmatroska.la
+  /usr/lib/gstreamer-0.10/libgstmonoscope.la
   /usr/lib/gstreamer-0.10/libgstmulaw.la
   /usr/lib/gstreamer-0.10/libgstmultifile.la
   /usr/lib/gstreamer-0.10/libgstmultipart.la
@@ -464,6 +466,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.10.11-2 -----
+Rebuilt.
 
 ----- version 0.10.11-1 -----
 Version bump.
