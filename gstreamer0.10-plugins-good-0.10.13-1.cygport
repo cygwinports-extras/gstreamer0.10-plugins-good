@@ -1,0 +1,33 @@
+# directdraw and directsound require DirectX headers not in w32api
+# taglib: segfaults
+GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg
+                 libcaca libdv libpng oss shout2 soup speex wavpack ximagesrc"
+inherit gst-plugins
+
+PATCH_URI="0.10.11-ipv6.patch"
+
+PKG_NAMES="${PN}"
+PKG_HINTS="good"
+
+for ext in ${GST_PLUGINS_EXT}
+do
+	PKG_NAMES+=" ${PN%-good}-${ext}"
+	PKG_HINTS+=" ${ext}"
+	case ${ext} in
+		aalib|libcaca|libdv|libpng)
+			declare gstreamer0_10_plugins_${ext}_CONTENTS="${GST_PLUGINDIR#/}/*gst${ext/lib}*"
+			gstreamer0_10_plugins_good_CONTENTS+=" --exclude=*gst${ext/lib}*"
+			;;
+		gconf)
+			declare gstreamer0_10_plugins_${ext}_CONTENTS="etc/ ${GST_PLUGINDIR#/}/*gst${ext//_}*"
+			gstreamer0_10_plugins_good_CONTENTS+=" --exclude=*gst${ext//_}*"
+			;;
+		*)
+			declare gstreamer0_10_plugins_${ext}_CONTENTS="${GST_PLUGINDIR#/}/*gst${ext//_}*"
+			gstreamer0_10_plugins_good_CONTENTS+=" --exclude=*gst${ext//_}*"
+			;;
+	esac
+done
+unset ext
+
+gstreamer0_10_plugins_good_CONTENTS+=" usr/"

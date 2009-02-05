@@ -1,20 +1,32 @@
-gstreamer010-plugins-good
+gstreamer0.10-plugins-good
 ------------------------------------------
 A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  gstreamer010-plugins-base-0.10.21-1
-  libglib2.0_0-2.18.3-1
-  libgstreamer0.10_0-0.10.21-2
+  libbz2_1-1.0.5-2
+  libglib2.0_0-2.18.4-1
+  libgstaudio0.10_0-0.10.22-1
+  libgstfft0.10_0-0.10.22-1
+  libgstinterfaces0.10_0-0.10.22-1
+  libgstnetbuffer0.10_0-0.10.22-1
+  libgstpbutils0.10_0-0.10.22-1
+  libgstreamer0.10_0-0.10.22-1
+  libgstriff0.10_0-0.10.22-1
+  libgstrtp0.10_0-0.10.22-1
+  libgstrtsp0.10_0-0.10.22-1
+  libgstsdp0.10_0-0.10.22-1
+  libgsttag0.10_0-0.10.22-1
+  libgstvideo0.10_0-0.10.22-1
+  libintl8-0.17-2
   liboil0.3_0-0.3.15-2
-
+  zlib-1.2.3-2
 (aalib)
   libaa1-1.4rc5-1
 (annodex)
-  libxml2-2.7.2-1
+  libxml2-2.7.3-1
 (cairo)
-  libcairo2-1.8.4-1
+  libcairo2-1.8.6-1
 (esd)
   esound-0.2.41-1
 (flac)
@@ -22,7 +34,7 @@ Runtime requirements:
 (gconf)
   libgconf2_4-2.24.0-1
 (gdk_pixbuf)
-  libgdk_pixbuf2.0_0-2.14.6-1
+  libgdk_pixbuf2.0_0-2.14.7-1
 (jpeg)
   libjpeg62-6b-12
 (libcaca)
@@ -30,17 +42,17 @@ Runtime requirements:
 (libdv)
   libdv4-1.0.0-1
 (libpng)
-  libpng12-1.2.33-1
+  libpng12-1.2.34-1
 (shout2)
   libshout3-2.2.2-1
 (soup)
-  libsoup2.4_1-2.24.2.1-1
+  libsoup2.4_1-2.24.3-1
 (speex)
   libspeex1-1.2rc1-1
 (wavpack)
   libwavpack1-4.50.1-1
 (ximagesrc)
-  libX11_6-1.1.5-1
+  libX11_6-1.1.5-2
   libXdamage1-1.1.1-2
   libXfixes3-4.0.3-2
 
@@ -53,6 +65,7 @@ Build requirements:
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gtk-doc-1.11-2
+  libgstfloatcast0.10-devel-0.10.22-1
   libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
@@ -69,38 +82,38 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer010-plugins-good-0.10.11-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-good-0.10.13-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer010-plugins-good-0.10.11-X.cygport all
+  cygport ./gstreamer0.10-plugins-good-0.10.13-X.cygport all
 
 This will create:
-  /usr/src/gstreamer010-plugins-good-0.10.11-X-src.tar.bz2
-  /usr/src/gstreamer010-plugins-good-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.13-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.13-X.tar.bz2
 
-  /usr/src/gstreamer010-plugins-aalib-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-annodex-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-cairo-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-esd-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-flac-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gconf-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-gdk_pixbuf-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-jpeg-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libcaca-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libdv-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-libpng-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-oss-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-shout2-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-speex-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-wavpack-0.10.11-X.tar.bz2
-  /usr/src/gstreamer010-plugins-ximagesrc-0.10.11-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-aalib-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-annodex-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cairo-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-esd-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-flac-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gconf-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gdk_pixbuf-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-jpeg-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libcaca-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libdv-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libpng-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-oss-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-shout2-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-speex-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-wavpack-0.10.13-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ximagesrc-0.10.13-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(gstreamer010-plugins-good)
+(gstreamer0.10-plugins-good)
   /usr/lib/gstreamer-0.10/cyggstalaw.dll
   /usr/lib/gstreamer-0.10/cyggstalpha.dll
   /usr/lib/gstreamer-0.10/cyggstalphacolor.dll
@@ -183,13 +196,13 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstvideomixer.la
   /usr/lib/gstreamer-0.10/libgstwavenc.la
   /usr/lib/gstreamer-0.10/libgstwavparse.la
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/ABOUT-NLS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/AUTHORS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/COPYING
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/ChangeLog
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/INSTALL
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/NEWS
-  /usr/share/doc/gstreamer010-plugins-good-0.10.11/README
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/ABOUT-NLS
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/AUTHORS
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/COPYING
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/ChangeLog
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/INSTALL
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/NEWS
+  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/README
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstIirEqualizer.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstVideoMixerPad.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch01.html
@@ -392,80 +405,83 @@ Files included in the binary packages:
   /usr/share/locale/zh_HK/LC_MESSAGES/gst-plugins-good-0.10.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gst-plugins-good-0.10.mo
 
-(gstreamer010-plugins-aalib)
+(gstreamer0.10-plugins-aalib)
   /usr/lib/gstreamer-0.10/cyggstaasink.dll
   /usr/lib/gstreamer-0.10/libgstaasink.la
 
-(gstreamer010-plugins-annodex)
+(gstreamer0.10-plugins-annodex)
   /usr/lib/gstreamer-0.10/cyggstannodex.dll
   /usr/lib/gstreamer-0.10/libgstannodex.la
 
-(gstreamer010-plugins-cairo)
+(gstreamer0.10-plugins-cairo)
   /usr/lib/gstreamer-0.10/cyggstcairo.dll
   /usr/lib/gstreamer-0.10/libgstcairo.la
 
-(gstreamer010-plugins-esd)
+(gstreamer0.10-plugins-esd)
   /usr/lib/gstreamer-0.10/cyggstesd.dll
   /usr/lib/gstreamer-0.10/libgstesd.la
 
-(gstreamer010-plugins-flac)
+(gstreamer0.10-plugins-flac)
   /usr/lib/gstreamer-0.10/cyggstflac.dll
   /usr/lib/gstreamer-0.10/libgstflac.la
 
-(gstreamer010-plugins-gconf)
+(gstreamer0.10-plugins-gconf)
   /etc/gconf/schemas/gstreamer-0.10.schemas
-  /etc/postinstall/gstreamer010-plugins-good.sh
-  /etc/preremove/gstreamer010-plugins-good.sh
+  /etc/postinstall/gstreamer0.10-plugins-good.sh
+  /etc/preremove/gstreamer0.10-plugins-good.sh
   /usr/lib/gstreamer-0.10/cyggstgconfelements.dll
   /usr/lib/gstreamer-0.10/libgstgconfelements.la
 
-(gstreamer010-plugins-gdk_pixbuf)
+(gstreamer0.10-plugins-gdk_pixbuf)
   /usr/lib/gstreamer-0.10/cyggstgdkpixbuf.dll
   /usr/lib/gstreamer-0.10/libgstgdkpixbuf.la
 
-(gstreamer010-plugins-jpeg)
+(gstreamer0.10-plugins-jpeg)
   /usr/lib/gstreamer-0.10/cyggstjpeg.dll
   /usr/lib/gstreamer-0.10/libgstjpeg.la
 
-(gstreamer010-plugins-libcaca)
+(gstreamer0.10-plugins-libcaca)
   /usr/lib/gstreamer-0.10/cyggstcacasink.dll
   /usr/lib/gstreamer-0.10/libgstcacasink.la
 
-(gstreamer010-plugins-libdv)
+(gstreamer0.10-plugins-libdv)
   /usr/lib/gstreamer-0.10/cyggstdv.dll
   /usr/lib/gstreamer-0.10/libgstdv.la
 
-(gstreamer010-plugins-libpng)
+(gstreamer0.10-plugins-libpng)
   /usr/lib/gstreamer-0.10/cyggstpng.dll
   /usr/lib/gstreamer-0.10/libgstpng.la
 
-(gstreamer010-plugins-oss)
+(gstreamer0.10-plugins-oss)
   /usr/lib/gstreamer-0.10/cyggstossaudio.dll
   /usr/lib/gstreamer-0.10/libgstossaudio.la
 
-(gstreamer010-plugins-shout2)
+(gstreamer0.10-plugins-shout2)
   /usr/lib/gstreamer-0.10/cyggstshout2.dll
   /usr/lib/gstreamer-0.10/libgstshout2.la
 
-(gstreamer010-plugins-soup)
+(gstreamer0.10-plugins-soup)
   /usr/lib/gstreamer-0.10/cyggstsouphttpsrc.dll
   /usr/lib/gstreamer-0.10/libgstsouphttpsrc.la
 
-(gstreamer010-plugins-speex)
+(gstreamer0.10-plugins-speex)
   /usr/lib/gstreamer-0.10/cyggstspeex.dll
   /usr/lib/gstreamer-0.10/libgstspeex.la
 
-(gstreamer010-plugins-wavpack)
+(gstreamer0.10-plugins-wavpack)
   /usr/lib/gstreamer-0.10/cyggstwavpack.dll
   /usr/lib/gstreamer-0.10/libgstwavpack.la
 
-(gstreamer010-plugins-ximagesrc)
+(gstreamer0.10-plugins-ximagesrc)
   /usr/lib/gstreamer-0.10/cyggstximagesrc.dll
   /usr/lib/gstreamer-0.10/libgstximagesrc.la
 
 ------------------
 
 Port Notes:
+
+----- version 0.10.13-1 -----
+Version bump.
 
 ----- version 0.10.11-2 -----
 Rebuilt.

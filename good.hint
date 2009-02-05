@@ -1,4 +1,4 @@
 category: Gnome Audio
-requires: cygwin libglib2.0_0 libgstreamer0.10_0 gstreamer010-plugins-base liboil0.3_0
+requires: cygwin libbz2_1 libglib2.0_0 libgstaudio0.10_0 libgstfft0.10_0 libgstinterfaces0.10_0 libgstnetbuffer0.10_0 libgstpbutils0.10_0 libgstreamer0.10_0 libgstriff0.10_0 libgstrtp0.10_0 libgstrtsp0.10_0 libgstsdp0.10_0 libgsttag0.10_0 libgstvideo0.10_0 libintl8 liboil0.3_0 zlib
 sdesc: "Good plugins for the GStreamer media framework (runtime, 0.10 branch)"
 ldesc: "This is gst-plugins, a set of plug-ins for GStreamer."
