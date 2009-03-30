@@ -3,74 +3,77 @@ gstreamer0.10-plugins-good
 A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbz2_1-1.0.5-2
-  libglib2.0_0-2.18.4-1
-  libgstaudio0.10_0-0.10.22-1
-  libgstfft0.10_0-0.10.22-1
-  libgstinterfaces0.10_0-0.10.22-1
-  libgstnetbuffer0.10_0-0.10.22-1
-  libgstpbutils0.10_0-0.10.22-1
-  libgstreamer0.10_0-0.10.22-1
-  libgstriff0.10_0-0.10.22-1
-  libgstrtp0.10_0-0.10.22-1
-  libgstrtsp0.10_0-0.10.22-1
-  libgstsdp0.10_0-0.10.22-1
-  libgsttag0.10_0-0.10.22-1
-  libgstvideo0.10_0-0.10.22-1
-  libintl8-0.17-2
-  liboil0.3_0-0.3.15-2
-  zlib-1.2.3-2
+  cygwin-1.7.0-44
+  libbz2_1-1.0.5-10
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libgstaudio0.10_0-0.10.22-10
+  libgstfft0.10_0-0.10.22-10
+  libgstinterfaces0.10_0-0.10.22-10
+  libgstnetbuffer0.10_0-0.10.22-10
+  libgstpbutils0.10_0-0.10.22-10
+  libgstreamer0.10_0-0.10.22-10
+  libgstriff0.10_0-0.10.22-10
+  libgstrtp0.10_0-0.10.22-10
+  libgstrtsp0.10_0-0.10.22-10
+  libgstsdp0.10_0-0.10.22-10
+  libgsttag0.10_0-0.10.22-10
+  libgstvideo0.10_0-0.10.22-10
+  libintl8-0.17-10
+  liboil0.3_0-0.3.15-10
+  zlib0-1.2.3-10
 (aalib)
   libaa1-1.4rc5-1
 (annodex)
-  libxml2-2.7.3-1
+  libxml2-2.7.3-10
 (cairo)
-  libcairo2-1.8.6-1
+  libcairo2-1.8.6-10
 (esd)
-  esound-0.2.41-1
+  esound-0.2.41-10
 (flac)
   libFLAC8-1.2.1-2
 (gconf)
-  libgconf2_4-2.24.0-1
+  libgconf2_4-2.26.0-1
 (gdk_pixbuf)
-  libgdk_pixbuf2.0_0-2.14.7-1
+  libgdk_pixbuf2.0_0-2.16.0-1
 (jpeg)
-  libjpeg62-6b-12
+  libjpeg62-6b-20
 (libcaca)
-  libcaca0-0.99.16-1
+  libcaca0-0.99.beta16-10
 (libdv)
-  libdv4-1.0.0-1
+  libdv4-1.0.0-10
 (libpng)
-  libpng12-1.2.34-1
+  libpng12-1.2.35-10
 (shout2)
-  libshout3-2.2.2-1
+  libshout3-2.2.2-10
 (soup)
-  libsoup2.4_1-2.24.3-1
+  libsoup2.4_1-2.26.0-1
 (speex)
   libspeex1-1.2rc1-1
+(taglib)
+  libstdc++6-4.3.2-2
+  libtag1-1.5-10
 (wavpack)
   libwavpack1-4.50.1-1
 (ximagesrc)
-  libX11_6-1.1.5-2
-  libXdamage1-1.1.1-2
-  libXfixes3-4.0.3-2
+  libX11_6-1.2-10
+  libXdamage1-1.1.1-10
+  libXfixes3-4.0.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
   gtk-doc-1.11-2
-  libgstfloatcast0.10-devel-0.10.22-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  libgstfloatcast0.10-devel-0.10.22-10
+  libtool-2.2.7a-11
+  make-3.81-2
   pkg-config-0.23a-2
-  python-2.5.2-4
-  python-xml-0.8.4-2
+  python-2.5.4-10
   sed-4.1.5-2
 
 Canonical website:
@@ -196,13 +199,12 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/libgstvideomixer.la
   /usr/lib/gstreamer-0.10/libgstwavenc.la
   /usr/lib/gstreamer-0.10/libgstwavparse.la
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/ABOUT-NLS
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/AUTHORS
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/COPYING
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/ChangeLog
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/INSTALL
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/NEWS
-  /usr/share/doc/gstreamer0.10-plugins-good-0.10.13/README
+  /usr/share/doc/gstreamer0.10-plugins-good/ABOUT-NLS
+  /usr/share/doc/gstreamer0.10-plugins-good/AUTHORS
+  /usr/share/doc/gstreamer0.10-plugins-good/COPYING
+  /usr/share/doc/gstreamer0.10-plugins-good/ChangeLog
+  /usr/share/doc/gstreamer0.10-plugins-good/NEWS
+  /usr/share/doc/gstreamer0.10-plugins-good/README
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstIirEqualizer.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/GstVideoMixerPad.html
   /usr/share/gtk-doc/html/gst-plugins-good-plugins-0.10/ch01.html
@@ -468,6 +470,10 @@ Files included in the binary packages:
   /usr/lib/gstreamer-0.10/cyggstspeex.dll
   /usr/lib/gstreamer-0.10/libgstspeex.la
 
+(gstreamer0.10-plugins-speex)
+  /usr/lib/gstreamer-0.10/cyggsttaglib.dll
+  /usr/lib/gstreamer-0.10/libgsttaglib.la
+
 (gstreamer0.10-plugins-wavpack)
   /usr/lib/gstreamer-0.10/cyggstwavpack.dll
   /usr/lib/gstreamer-0.10/libgstwavpack.la
@@ -480,62 +486,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.10.13-1 -----
-Version bump.
-
------ version 0.10.11-2 -----
-Rebuilt.
-
------ version 0.10.11-1 -----
-Version bump.
-
------ version 0.10.10-1 -----
-Version bump.
-
------ version 0.10.8-2 -----
-Rebuilt for GStreamer 0.10.20.
-
------ version 0.10.8-1 -----
-Version bump.
-
------ version 0.10.7-1 -----
-Version bump.
-
------ version 0.10.6-3 -----
-Rebuilt.
-
------ version 0.10.6-2 -----
-Rebuilt for updated dependencies.
-
------ version 0.10.6-1 -----
-Version bump.
-wavpack sources moved to -good from -bad.
-directdraw and directsound not yet built due to lack of 
-required headers in w32api.
-
------ version 0.10.5-1 -----
-Version bump.
-libcaca plugin now depends on libcaca-0.99.
-
------ version 0.10.4-1 -----
-Version bump.
-Requires cygport-0.2.7 for simultaneous building of external plugins.
-
------ version 0.10.3-1 -----
-Version bump.
-gst-plugins packages are now modular with cygport-0.1.92.
-
------ version 0.10.2-1 -----
-Version bump.
-New external plugin: cdio.
-
------ version 0.10.1-1 -----
-Version bump.
-Removed unnecessary import libraries from the plugin directory.
-
------ version 0.10.0-1 -----
-Initial release of 0.10 stable branch for Cygwin.
-External plugins: aa caca cairo dv esd flac gconf jpeg oss png shout2 speex.
+----- version 0.10.13-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

@@ -1,10 +1,7 @@
 # directdraw and directsound require DirectX headers not in w32api
-# taglib: segfaults
-GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg
-                 libcaca libdv libpng oss shout2 soup speex wavpack ximagesrc"
+GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libcaca
+                 libdv libpng oss shout2 soup speex taglib wavpack ximagesrc"
 inherit gst-plugins
-
-PATCH_URI="0.10.11-ipv6.patch"
 
 PKG_NAMES="${PN}"
 PKG_HINTS="good"
