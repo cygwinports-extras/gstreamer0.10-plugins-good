@@ -2,4 +2,4 @@ category: Graphics
 requires: cygwin libglib2.0_0 libgstreamer0.10_0 libgstvideo0.10_0 libgdk_pixbuf2.0_0 libgcc1
 external-source: gstreamer0.10-plugins-good
 sdesc: "GStreamer 0.10 GdkPixbuf plugin"
-ldesc: "GdkPixbuf plugin for the GStreamer multimedia framework (0.10 branch)
+ldesc: "GdkPixbuf plugin for the GStreamer multimedia framework (0.10 branch)"
