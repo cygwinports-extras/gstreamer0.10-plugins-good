@@ -47,7 +47,8 @@ Runtime requirements:
 (shout2)
   libshout3-2.2.2-10
 (soup)
-  libsoup2.4_1-2.26.3-1
+  libsoup-gnome2.4_1-2.26.3-2
+  libsoup2.4_1-2.26.3-2
 (speex)
   libspeex1-1.2rc1-1
 (taglib)
