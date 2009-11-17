@@ -3,39 +3,27 @@ gstreamer0.10-plugins-good
 A collection of plugins for the GStreamer media framework.
 
 Runtime requirements:
-  cygwin-1.7.0-60
+  cygwin-1.7.0-62
   libbz2_1-1.0.5-10
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.5-1
-  libgstaudio0.10_0-0.10.24-1
-  libgstfft0.10_0-0.10.24-1
-  libgstinterfaces0.10_0-0.10.24-1
-  libgstnetbuffer0.10_0-0.10.24-1
-  libgstpbutils0.10_0-0.10.24-1
-  libgstreamer0.10_0-0.10.24-1
-  libgstriff0.10_0-0.10.24-1
-  libgstrtp0.10_0-0.10.24-1
-  libgstrtsp0.10_0-0.10.24-1
-  libgstsdp0.10_0-0.10.24-1
-  libgsttag0.10_0-0.10.24-1
-  libgstvideo0.10_0-0.10.24-1
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libgstinterfaces0.10_0-0.10.25-1
+  libgstreamer0.10_0-0.10.25-1
   libintl8-0.17-11
   liboil0.3_0-0.3.16-1
   zlib0-1.2.3-10
 (aalib)
   libaa1-1.4rc5-1
 (annodex)
-  libxml2-2.7.3-11
+  libxml2-2.7.4-1
 (cairo)
   libcairo2-1.8.8-1
-(esd)
-  esound-0.2.41-10
 (flac)
   libFLAC8-1.2.1-2
 (gconf)
-  libgconf2_4-2.26.2-1
+  libgconf2_4-2.28.0-1
 (gdk_pixbuf)
-  libgdk_pixbuf2.0_0-2.16.6-1
+  libgdk_pixbuf2.0_0-2.18.3-1
 (jpeg)
   libjpeg7-7-10
 (libcaca)
@@ -47,30 +35,30 @@ Runtime requirements:
 (shout2)
   libshout3-2.2.2-10
 (soup)
-  libsoup-gnome2.4_1-2.26.3-2
-  libsoup2.4_1-2.26.3-2
+  libsoup-gnome2.4_1-2.28.1-1
+  libsoup2.4_1-2.28.1-1
 (speex)
   libspeex1-1.2rc1-1
 (taglib)
-  libstdc++6-4.3.2-2
+  libstdc++6-4.3.4-1
   libtag1-1.5-10
 (wavpack)
   libwavpack1-4.50.1-1
 (ximagesrc)
-  libX11_6-1.2.2-1
-  libXdamage1-1.1.1-10
-  libXfixes3-4.0.3-10
+  libX11_6-1.3.2-1
+  libXdamage1-1.1.2-1
+  libXfixes3-4.0.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
+  automake1.11-1.11-10
   binutils-2.19.51-1
-  cygport-0.9.9-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gcc4-g++-4.3.4-1
   gtk-doc-1.11-2
-  libgstfloatcast0.10-devel-0.10.24-1
   libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
@@ -86,37 +74,40 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-plugins-good-0.10.16-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-good-0.10.17-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-plugins-good-0.10.16-X.cygport all
+  cygport ./gstreamer0.10-plugins-good-0.10.17-X.cygport all
 
 This will create:
-  /usr/src/gstreamer0.10-plugins-good-0.10.16-X-src.tar.bz2
-  /usr/src/gstreamer0.10-plugins-good-0.10.16-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.17-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.17-X.tar.bz2
 
-  /usr/src/gstreamer0.10-plugins-aalib-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-annodex-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-cairo-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-esd-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-flac-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-gconf-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-gdk_pixbuf-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-jpeg-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-libcaca-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-libdv-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-libpng-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-oss-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-shout2-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-speex-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-taglib-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-wavpack-0.10.16-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-ximagesrc-0.10.16-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-aalib-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-annodex-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cairo-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-flac-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gconf-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gdk_pixbuf-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-jpeg-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libcaca-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libdv-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libpng-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-oss-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-shout2-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-speex-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-taglib-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-wavpack-0.10.17-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ximagesrc-0.10.17-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.10.17-1 -----
+Version bump.
+Removed plugin: esd (backend deprecated).
 
 ----- version 0.10.16-1 -----
 Version bump.

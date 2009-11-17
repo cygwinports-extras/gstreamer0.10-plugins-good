@@ -1,5 +1,5 @@
 # directdraw and directsound require DirectX headers not in w32api
-GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libcaca
+GST_PLUGINS_EXT="aalib annodex cairo flac gconf gdk_pixbuf jpeg libcaca
                  libdv libpng oss shout2 soup speex taglib wavpack ximagesrc"
 inherit gst-plugins
 

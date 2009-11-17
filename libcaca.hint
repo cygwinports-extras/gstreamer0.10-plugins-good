@@ -1,4 +1,4 @@
-category: Graphics Video
+category: Video
 requires: libglib2.0_0 libgstreamer0.10_0 libcaca0 libgcc1
 external-source: gstreamer0.10-plugins-good
 sdesc: "GStreamer 0.10 caca plugin"
