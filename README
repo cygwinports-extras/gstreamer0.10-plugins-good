@@ -7,8 +7,8 @@ Runtime requirements:
   libbz2_1-1.0.5-10
   libgcc1-4.3.4-3
   libglib2.0_0-2.22.4-2
-  libgstinterfaces0.10_0-0.10.27-1
-  libgstreamer0.10_0-0.10.27-1
+  libgstinterfaces0.10_0-0.10.28-1
+  libgstreamer0.10_0-0.10.28-1
   libintl8-0.17-11
   liboil0.3_0-0.3.17-1
   zlib0-1.2.3-10
@@ -70,36 +70,36 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gstreamer0.10-plugins-good-0.10.19-X-src.tar.bz2
+  unpack gstreamer0.10-plugins-good-0.10.21-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gstreamer0.10-plugins-good-0.10.19-X.cygport all
+  cygport ./gstreamer0.10-plugins-good-0.10.21-X.cygport all
 
 This will create:
-  /usr/src/gstreamer0.10-plugins-good-0.10.19-X-src.tar.bz2
-  /usr/src/gstreamer0.10-plugins-good-0.10.19-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.21-X-src.tar.bz2
+  /usr/src/gstreamer0.10-plugins-good-0.10.21-X.tar.bz2
 
-  /usr/src/gstreamer0.10-plugins-annodex-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-cairo-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-flac-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-gconf-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-gdk_pixbuf-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-jpeg-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-libdv-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-libpng-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-oss-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-shout2-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-speex-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-taglib-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-wavpack-0.10.19-X.tar.bz2
-  /usr/src/gstreamer0.10-plugins-ximagesrc-0.10.19-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-annodex-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-cairo-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-flac-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gconf-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-gdk_pixbuf-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-jpeg-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libdv-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-libpng-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-oss-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-shout2-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-speex-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-taglib-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-wavpack-0.10.21-X.tar.bz2
+  /usr/src/gstreamer0.10-plugins-ximagesrc-0.10.21-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
 
------ version 0.10.19-1 -----
+----- version 0.10.21-1 -----
 Version bump.
 
 ----- version 0.10.17-1 -----
