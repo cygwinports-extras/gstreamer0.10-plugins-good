@@ -1,0 +1,31 @@
+From f69dcaab58b262bb60fbbd561f01b9e049ba8da4 Mon Sep 17 00:00:00 2001
+From: David Schleef <ds@schleef.org>
+Date: Mon, 04 Jul 2011 02:51:32 +0000
+Subject: pulse: Increase ranks to PRIMARY + 10
+
+So that pulsesrc/pulsesink get chosen over other possible PRIMARY
+src/sinks by autoaudiosink.  Presumably, if pulse is available, it
+is always preferred over another src/sink.
+
+Fixes: #647540.
+---
+diff --git a/ext/pulse/plugin.c b/ext/pulse/plugin.c
+index beb8848..3abc26f 100644
+--- a/ext/pulse/plugin.c
++++ b/ext/pulse/plugin.c
+@@ -41,11 +41,11 @@ plugin_init (GstPlugin * plugin)
+   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+ #endif
+ 
+-  if (!gst_element_register (plugin, "pulsesink", GST_RANK_PRIMARY,
++  if (!gst_element_register (plugin, "pulsesink", GST_RANK_PRIMARY + 10,
+           GST_TYPE_PULSESINK))
+     return FALSE;
+ 
+-  if (!gst_element_register (plugin, "pulsesrc", GST_RANK_PRIMARY,
++  if (!gst_element_register (plugin, "pulsesrc", GST_RANK_PRIMARY + 10,
+           GST_TYPE_PULSESRC))
+     return FALSE;
+ 
+--
+cgit v0.9.0.2-2-gbebe

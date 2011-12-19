@@ -4,7 +4,8 @@ GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libdv libpng
                  oss pulse shout2 soup speex taglib waveform wavpack ximagesrc"
 inherit gst-plugins
 
-PATCH_URI="0.10.30-waveform.patch"
+PATCH_URI="0.10.30-pulse-rank.patch
+           0.10.30-waveform.patch"
 
 PKG_NAMES="${PN}"
 PKG_HINTS="good"
