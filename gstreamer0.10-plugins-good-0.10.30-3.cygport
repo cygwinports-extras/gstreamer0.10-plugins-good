@@ -1,14 +1,19 @@
 # directdraw and directsound require DirectX headers not in w32api
-# possible but disabled: aalib, libcaca
-GST_PLUGINS_EXT="annodex cairo flac gconf gdk_pixbuf jpeg libdv libpng
-                 oss pulse shout2 soup speex taglib wavpack ximagesrc"
+# possible but disabled: libcaca
+GST_PLUGINS_EXT="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libdv libpng
+                 oss pulse shout2 soup speex taglib waveform wavpack ximagesrc"
 inherit gst-plugins
+
+PATCH_URI="0.10.30-waveform.patch"
 
 PKG_NAMES="${PN}"
 PKG_HINTS="good"
 
 for ext in ${GST_PLUGINS_EXT}
 do
+	# annodex requires only libxml2, already a core dep
+	case ${ext} in annodex|oss|waveform) continue ;; esac
+
 	PKG_NAMES+=" ${PN%-good}-${ext}"
 	PKG_HINTS+=" ${ext}"
 	case ${ext} in

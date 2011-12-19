@@ -1,5 +1,5 @@
 category: Audio
-requires: libglib2.0_0 libgstreamer0.10_0 libgstinterfaces0.10_0 libspeex1 libgcc1
+requires: libglib2.0_0 libgstreamer0.10_0 libgstinterfaces0.10_0 libspeex1 libgcc1 gstreamer0.10-plugins-ogg
 external-source: gstreamer0.10-plugins-good
 sdesc: "GStreamer 0.10 Speex plugin"
 ldesc: "Speex plugin for the GStreamer multimedia framework (0.10 branch)"
