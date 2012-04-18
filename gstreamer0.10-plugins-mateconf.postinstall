@@ -1,0 +1,3 @@
+export MATECONF_CONFIG_SOURCE="xml:merged:/etc/mateconf/mateconf.xml.defaults"
+/usr/bin/mateconftool-2 --makefile-install-rule /etc/mateconf/schemas/gstreamer-0.10.schemas > /dev/null 2>&1
+
