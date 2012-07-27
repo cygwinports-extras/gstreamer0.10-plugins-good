@@ -1,2 +1,0 @@
-export GCONF_CONFIG_SOURCE="xml:merged:/etc/gconf/gconf.xml.defaults"
-/usr/bin/gconftool-2 --makefile-uninstall-rule /etc/gconf/schemas/gstreamer-0.10.schemas > /dev/null 2>&1
