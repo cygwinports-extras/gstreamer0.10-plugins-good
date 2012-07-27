@@ -1,5 +1,0 @@
-category: MATE
-requires: libglib2.0_0 libgstreamer0.10_0 libmateconf2_4 libgcc1 mate-conf
-external-source: gstreamer0.10-plugins-good
-sdesc: "GStreamer 0.10 MateConf plugin"
-ldesc: "MateConf plugin for the GStreamer multimedia framework (0.10 branch)"

@@ -1,14 +1,18 @@
 GST_PLUGINS_ENABLE="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libdv
-                    libpng mateconf oss pulse shout2 soup speex taglib waveform
+                    libpng oss pulse shout2 soup speex taglib waveform
                     wavpack ximagesrc"
 GST_PLUGINS_DISABLE="directsound dv1394 gst_v4l2 hal jack libcaca oss4
                      osx_audio osx_video sunaudio xvideo"
 inherit gst-plugins
 
-PATCH_URI="0.10.30-waveform.patch
-           0.10.31-mateconfelements.patch"
+CATEGORY="Audio Video"
+SUMMARY="GStreamer 0.10 Good Plug-ins collection"
+DESCRIPTION="GStreamer Good Plug-ins is a set of plug-ins that are
+consider to have good quality code, correct functionality, and a
+preferred license (LGPL for the plug-in code, LGPL or LGPL-compatible
+for the supporting library)."
 
-RESTRICT="postinst-gconf postinst-mateconf"
+PATCH_URI="0.10.30-waveform.patch"
 
 PKG_NAMES="${PN}"
 PKG_HINTS="good"
@@ -20,13 +24,14 @@ do
 
 	PKG_NAMES+=" ${PN%-good}-${ext}"
 	PKG_HINTS+=" ${ext}"
+	declare gstreamer0_10_plugins_${ext}_SUMMARY="GStreamer 0.10 ${ext} plugin"
 	case ${ext} in
 	aalib|libcaca|libdv|libpng)
 		declare gstreamer0_10_plugins_${ext}_CONTENTS="${GST_PLUGINDIR#/}/*gst${ext/lib}*"
 		gstreamer0_10_plugins_good_CONTENTS+=" --exclude=*gst${ext/lib}*"
 		;;
-	gconf|mateconf)
-		declare gstreamer0_10_plugins_${ext}_CONTENTS="etc/${ext}/ etc/postinstall/${PN%-good}-${ext}.sh etc/preremove/${PN%-good}-${ext}.sh ${GST_PLUGINDIR#/}/*gst${ext//_}*"
+	gconf)
+		declare gstreamer0_10_plugins_${ext}_CONTENTS="etc/ ${GST_PLUGINDIR#/}/*gst${ext//_}*"
 		gstreamer0_10_plugins_good_CONTENTS+=" --exclude=*gst${ext//_}*"
 		;;
 	*)
@@ -39,4 +44,7 @@ unset ext
 
 gstreamer0_10_plugins_good_CONTENTS+=" usr/"
 
-KEEP_LA_FILES="shared"
+gstreamer0_10_plugins_flac_REQUIRES="gstreamer0.10-plugins-ogg"
+gstreamer0_10_plugins_speex_REQUIRES="gstreamer0.10-plugins-ogg"
+
+KEEP_LA_FILES="none"

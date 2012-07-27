@@ -1,5 +1,0 @@
-category: Audio Gnome Video
-requires: libglib2.0_0 libgstreamer0.10_0 GConf2 libgconf2_4 libgcc1
-external-source: gstreamer0.10-plugins-good
-sdesc: "GStreamer 0.10 GConf plugin"
-ldesc: "GConf plugin for the GStreamer multimedia framework (0.10 branch)"
