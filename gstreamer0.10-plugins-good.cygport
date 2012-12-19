@@ -1,17 +1,16 @@
 NAME="gstreamer0.10-plugins-good"
 VERSION=0.10.31
-RELEASE=4
+RELEASE=5
 CATEGORY="Audio Video"
 SUMMARY="GStreamer 0.10 Good Plug-ins collection"
 DESCRIPTION="GStreamer Good Plug-ins is a set of plug-ins that are
 consider to have good quality code, correct functionality, and a
 preferred license (LGPL for the plug-in code, LGPL or LGPL-compatible
 for the supporting library)."
-GST_PLUGINS_ENABLE="aalib annodex cairo esd flac gconf gdk_pixbuf jpeg libdv
-                    libpng oss pulse shout2 soup speex taglib waveform
-                    wavpack ximagesrc"
-GST_PLUGINS_DISABLE="directsound dv1394 gst_v4l2 hal jack libcaca oss4
-                     osx_audio osx_video sunaudio xvideo"
+GST_PLUGINS_ENABLE="aalib annodex cairo directsound esd flac gconf gdk_pixbuf
+                    jpeg libcaca libdv libpng oss pulse shout2 soup speex taglib
+                    waveform wavpack ximagesrc"
+GST_PLUGINS_DISABLE="dv1394 gst_v4l2 hal jack oss4 osx_audio osx_video sunaudio xvideo"
 inherit gst-plugins
 
 PATCH_URI="0.10.30-waveform.patch"
@@ -21,7 +20,7 @@ PKG_NAMES="${PN}"
 for ext in ${GST_PLUGINS_ENABLE}
 do
 	# annodex requires only libxml2, already a core dep
-	case ${ext} in annodex|oss|waveform) continue ;; esac
+	case ${ext} in annodex|directsound|oss|waveform) continue ;; esac
 
 	PKG_NAMES+=" ${PN%-good}-${ext}"
 	declare gstreamer0_10_plugins_${ext}_SUMMARY="GStreamer 0.10 ${ext} plugin"
@@ -46,5 +45,3 @@ gstreamer0_10_plugins_good_CONTENTS+=" usr/"
 
 gstreamer0_10_plugins_flac_REQUIRES="gstreamer0.10-plugins-ogg"
 gstreamer0_10_plugins_speex_REQUIRES="gstreamer0.10-plugins-ogg"
-
-KEEP_LA_FILES="none"
